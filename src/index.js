@@ -16,6 +16,7 @@ import {
   PageNotFound,
 } from "./pages";
 import ScrollToTop from "./components/ScrollToTop";
+
 import { Toaster } from "react-hot-toast";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
