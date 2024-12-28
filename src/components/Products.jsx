@@ -19,7 +19,7 @@ const Products = () => {
   useEffect(() => {
     const getProducts = async () => {
       // setLoading(true);
-      const response = await fetch("https://fakestoreapi.com/products/");
+      const response = await fetch("https://api.escuelajs.co/api/v1/products");
       if (componentMounted) {
         setData(await response.clone().json());
         setFilter(await response.json());
@@ -47,7 +47,7 @@ const Products = () => {
               <div className="card text-center h-100" key={product.id}>
                 <img
                   className="card-img-top p-3"
-                  src={product.image}
+                  src={product.category.image}
                   alt="Card"
                   height={300}
                 />
